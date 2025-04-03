@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Portafolio de Diego Ramírez</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    <nav class="navbar navbar-expand-lg fixed-top animate__animated animate__fadeInRightBig" id="navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech">Tecnologías</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn" id="claro" onclick="modoClaro()">
+                            <span class="material-icons margenModo">light_mode</span>
+                        </button>
+                        <button type="button" class="btn" id="oscuro" onclick="modoOscuro()">
+                            <span class="material-icons margenModo">dark_mode</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio">
+        <div class="position-relative animate__animated animate__fadeInLeftBig">
+            <img src="img/bg.jpg" class="img-fluid w-100" alt="Fondo profesional">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+            <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+                <h1 class="text-white display-4 fw-bold">Diego Edenilson Ramírez</h1>
+                <p class="text-white fs-3">Desarrollador de Software</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5 animate__animated animate__fadeInRightBig" id="aboutMe">
+            <div class="container">
+                <h1 class="text-center mb-5">Sobre mí</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="fs-5 text-justify">
+                            Soy un programador apasionado por el desarrollo de software y en búsqueda constante de
+                            aprendizaje de nuevas tecnologías. Me gusta trabajar en proyectos y soluciones innovadoras,
+                            aplicando buenas prácticas de desarrollo.
+                        </p>
+                        <p class="fs-5 text-justify">
+                            Mi empeño por encontrar la mejor solución para mis clientes me ha llevado a desarrollar
+                            diversas aplicaciones, desde sitios web hasta módulos contables especializados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 animate__animated animate__fadeInLeftBig" id="work">
+            <div class="container">
+                <h1 class="text-center mb-5">Experiencia laboral</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Desarrollador Web Full Stack</h5>
+                                <h6 class="card-subtitle mb-2">Casa de huéspedes La Mansión | Marzo 2025 - Presente</h6>
+                                <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Modelado de base de datos (MySQL) para reservaciones, noches, habitaciones,
+                                        clientes y usuarios.
+                                    </li>
+                                    <li>
+                                        Desarrollo del backend con PHP, mediante el uso de APIs y frontend con
+                                        JavaScript
+                                    </li>
+                                    <li>
+                                        Creación de un panel administrativo e interfaz de usuario (UI/UX) intuitiva con
+                                        HTML5, CSS3, JavaScript, utilizando Bootstrap como framework de diseño
+                                    </li>
+                                    <li>
+                                        Configuración y despliegue en Hostinger, mediante control de despliegue y
+                                        webhooks de gitHub
+                                    </li>
+                                </ul>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Supervisor de Brigada</h5>
+                                <h6 class="card-subtitle mb-2">Banco Central de Reserva | Mayo 2024 - Junio 2024</h6>
+                                <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Participación en VII Censo de Población y VI de Vivienda El Salvador
+                                    </li>
+                                    <li>
+                                        Control de brigada asignada, gestión de horarios y logística
+                                    </li>
+                                    <li>
+                                        Creación de reportes diarios acerca de incidencias, visitas y casas censadas
+                                    </li>
+                                    <li>
+                                        Manejo de aplicativo de boleta censal mediante dispositivos móviles
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Programador Web</h5>
+                                <h6 class="card-subtitle mb-2">VoipCom El Salvador | Diciembre 2023 - Marzo 2024</h6>
+                                <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Reparación y creación de módulos para sistema web administrativo CONTROL RISK,
+                                        desarrollado en VUE JS y typescript
+                                    </li>
+                                    <li>
+                                        Control de versiones de software utilizando GitLab
+                                    </li>
+                                    <li>
+                                        Gestión de base de datos no relacional (MONGODB), creación y administración de
+                                        colecciones
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Programador JR</h5>
+                                <h6 class="card-subtitle mb-2">Waresoft | Julio 2022 - Diciembre 2022</h6>
+                                <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Desarrollo, gestión e implementación de sitio web elaborado en WordPress
+                                        “Waresoft Academy”
+                                    </li>
+                                    <li>
+                                        Gestión, desarrollo e implementación de sitio web empresarial “Waresoft”,
+                                        desarrollado en PHP y JS
+                                    </li>
+                                    <li>
+                                        Desarrollo de prototipo de aplicación móvil orientada a cupones en React Native
+                                    </li>
+                                    <li>
+                                        Control de versiones de software utilizando Git.
+                                    </li>
+                                    <li>
+                                        Gestión de base de datos (MYSQL), creación y administración de tablas
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Pasante de Desarrollo de Software</h5>
+                                <h6 class="card-subtitle mb-2">Grupo Villatoro | Febrero 2022 - Junio 2022</h6>
+                                <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Gestión e implementación del sistema ERP Dolibarr en lenguaje de programación
+                                        PHP para facturación, contabilidad y reportes para empresas dentro del grupo,
+                                        adaptándolo para las leyes tributarias de El Salvador
+                                    </li>
+                                    <li>
+                                        Gestión de base de datos (MYSQL), administración de tablas y reportes de datos
+                                    </li>
+
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Desarrollador Web</h5>
+                                <h6 class="card-subtitle mb-2">Coresystems | Enero 2021 - Noviembre 2021</h6>
+                                <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Creación, Desarrollo y gestión de sistema administrativo para residenciales
+                                        Citiger, creación de mantenimientos, reportes y recursos varios, creado
+                                        utilizando PHP, HTML5, CSS3 y JS
+                                    </li>
+                                    <li>
+                                        Administrador de bases de datos (POSTGRESQL), creación de estructura de la base
+                                        de datos, creación y administración de tablas
+                                    </li>
+
+                                    <li>
+                                        Control de versiones de software utilizando Git.
+                                    </li>
+
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" id="projects">
+            <div class="container">
+                <h1 class="text-center mb-5">Mis Proyectos</h1>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div id="projectsCarousel" class="carousel slide project-carousel" data-bs-ride="carousel">
+                            <!-- Indicadores -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="2"></button>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="carousel-inner">
+                                <!-- Proyecto 1 -->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/lamansion.png" class="d-block w-100 project-img"
+                                                alt="Proyecto 1">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="project-title">Sistema de Gestión de Reservaciones</h3>
+                                            <p class="project-description">
+                                                Desarrollo completo de un sistema de gestión de reservaciones y visitas
+                                                de un
+                                                hotel,
+                                                control de clientes, habitaciones disponibles, administración de
+                                                usuarios, permisos y roles.
+                                            <div class="project-tech">
+                                                <span class="tech-badge">PHP</span>
+                                                <span class="tech-badge">Bootstrap</span>
+                                                <span class="tech-badge">JavaScript</span>
+                                            </div>
+                                            <div class="project-links">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Proyecto 2 -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/sgp.png" class="d-block w-100 project-img" alt="Proyecto 2">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="project-title">Sistema de Gestión de Productos</h3>
+                                            <p class="project-description">
+                                                Sistema para gestión de inventarios, inicio de sesión, permisos y roles.
+                                            </p>
+                                            <div class="project-tech">
+                                                <span class="tech-badge">C#</span>
+                                                <span class="tech-badge">SQL Server</span>
+                                                <span class="tech-badge">.NET Framework</span>
+                                            </div>
+                                            <div class="project-links">
+
+                                                <a href="https://github.com/DiegoEden/SistemaGestionProductos"
+                                                    target="_blank" class="btn btnlink">
+                                                    <i class="material-icons" style="vertical-align: middle;">code</i>
+                                                    Código
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Proyecto 3 -->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="img/expose.png" class="d-block w-100 project-img"
+                                                alt="Proyecto 3">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h3 class="project-title">E-commerce Personalizado "EXPOSE"</h3>
+                                            <p class="project-description">
+                                                Tienda online con carrito de compras, generación de facturas, búsqueda
+                                                de productos
+                                                y panel de administración, con excelente
+                                                performance en móviles.
+                                            </p>
+                                            <div class="project-tech">
+                                                <span class="tech-badge">PHP</span>
+                                                <span class="tech-badge">Bootstrap</span>
+                                                <span class="tech-badge">JavaScript</span>
+                                            </div>
+                                            <div class="project-links">
+                                                <a href="https://megabytesv.com/TiendaRopa/views/public/index.php"
+                                                    class="btn btnlink" target="_blank">
+                                                    <i class="material-icons"
+                                                        style="vertical-align: middle;">visibility</i> Sitio Web
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Controles -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projectsCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 animate__animated animate__fadeInLeftBig" id="education">
+            <div class="container">
+                <h1 class="text-center mb-5">Educación</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingeniería en Sistemas y Computación</h5>
+                                <h6 class="card-subtitle mb-2">Universidad Tecnológica | Julio 2023 - Presente</h6>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Ingeniería en Ciencias de la Computación</h5>
+                                <h6 class="card-subtitle mb-2">Universidad Don Bosco | Enero 2022 - Junio 2023</h6>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Bachillerato Técnico en Desarrollo de Software</h5>
+                                <h6 class="card-subtitle mb-2">Instituto Técnico Ricaldone | Enero 2019 - Noviembre 2021
+                                </h6>
+                                <p class="card-text">
+                                <ul>
+                                    <li>
+                                        Tercer lugar Expotécnica 2019, desarrollo de sistema para administración de
+                                        talleres
+                                    </li>
+                                    <li>
+                                        Ganador de primer lugar en Expotécnica 2020 y 2021 (Desarrollo de sistema para
+                                        kínder en JAVA, desarrollo de sistema para residenciales en PHP y JS) </li>
+
+
+
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-section py-5 animate__animated animate__fadeInRightBig" id="tech">
+            <div class="container">
+                <h1 class="text-center mb-5 section-title">Tecnologías</h1>
+                <div class="row tech-grid">
+                    <!-- Lenguajes de Programación -->
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-csharp-plain tech-icon"></i>
+                            <h3 class="tech-name">C#</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-java-plain tech-icon"></i>
+                            <h3 class="tech-name">Java</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-php-plain tech-icon"></i>
+                            <h3 class="tech-name">PHP</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-javascript-plain tech-icon"></i>
+                            <h3 class="tech-name">JavaScript</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-react-original tech-icon"></i>
+                            <h3 class="tech-name">React Native</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-vuejs-plain tech-icon"></i>
+                            <h3 class="tech-name">Vue.js</h3>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-html5-plain tech-icon"></i>
+                            <h3 class="tech-name">HTML5</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-bootstrap-plain tech-icon"></i>
+                            <h3 class="tech-name">Bootstrap</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-materialui-plain tech-icon"></i>
+                            <h3 class="tech-name">Materialize</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-mysql-plain tech-icon"></i>
+                            <h3 class="tech-name">MYSQL</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-postgresql-plain tech-icon"></i>
+                            <h3 class="tech-name">POSTGRESQL</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 tech-col">
+                        <div class="tech-card">
+                            <i class="devicon-mongodb-plain tech-icon"></i>
+                            <h3 class="tech-name">MONGODB</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="template.js"></script>
+
+    <script>
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            let currentSection = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.id;
+                }
+            });
+
+            // Actualizar el atributo data-current-section del body
+            document.body.setAttribute('data-current-section', currentSection);
+
+            // Actualizar clases active en los enlaces
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        // Smooth scrolling para los enlaces del menú
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+
+                    // Cerrar el menú en móviles
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarCollapse.classList.remove('show');
+                    }
+                }
+            });
+        });
+
+        // Ejecutar al cargar y al hacer scroll
+        window.addEventListener('load', updateActiveNav);
+        window.addEventListener('scroll', updateActiveNav);
+    </script>
+</body>
+
+</html>
